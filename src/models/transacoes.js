@@ -3,7 +3,7 @@ const { DataTypes } = require('sequelize');
 const Contas = require("./contas");
 const Transacao = sequelize.define('Transacao', {
     tipoConta: {
-        type: dataTypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false
     },
     tipoTrans: {

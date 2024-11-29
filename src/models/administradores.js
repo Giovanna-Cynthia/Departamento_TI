@@ -3,7 +3,7 @@ const { DataTypes } = require('sequelize');
 
 const Admin = sequelize.define('Admin', {
     nome: {
-        type: dataTypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false
     },
     email: {

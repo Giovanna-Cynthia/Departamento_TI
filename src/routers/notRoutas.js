@@ -7,8 +7,6 @@ router.post('/', validateNot, notController.create);
 
 router.put('/:id', validateNot, validateNotId, notController.update); 
 
-router.put("/:id", validateNot, validateNotId, notController.esqueciSenha);
-
 router.delete('/:id', validateNotId, notController.delete ); 
 
 router.get('/:id', validateNotId, notController.getOne); 

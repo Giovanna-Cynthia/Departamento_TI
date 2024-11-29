@@ -1,7 +1,10 @@
 const { Router } = require("express");
 const adminRoutes = require("./adminRoutas");
+const cliRoutes = require("./cliRoutas");
+const contaRoutes = require("./contaRoutas");
+const notRoutes = require("./notRoutas");
+const transRoutes = require("./transRoutas");
 const authenticateToken = require('../middlewares/authenticateToken');
-const adminController = require("../controllers/adminController");
 
 const router = Router();
 

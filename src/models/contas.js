@@ -4,7 +4,7 @@ const Clientes = require("./clientes");
 
 const Contas = sequelize.define('Contas', {
     saldo: {
-        type: dataTypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false
     },
     clienteId: {

@@ -7,8 +7,6 @@ router.post('/', validateCli, cliController.create);
 
 router.put('/:id', validateCli, validateCliId, cliController.update); 
 
-router.put("/:id", validateCli, validateCliId, cliController.esqueciSenha);
-
 router.delete('/:id', validateCliId, cliController.delete ); 
 
 router.get('/:id', validateCliId, cliController.getOne); 

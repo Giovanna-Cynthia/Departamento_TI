@@ -7,8 +7,6 @@ router.post('/', validateTrans, transController.create);
 
 router.put('/:id', validateTrans, validateTransId, transController.update); 
 
-router.put("/:id", validateTrans, validateTransId, transController.esqueciSenha);
-
 router.delete('/:id', validateTransId, transController.delete ); 
 
 router.get('/:id', validateTransId, transController.getOne); 

@@ -4,7 +4,7 @@ const Clientes = require("./clientes");
 
 const Notificacoes = sequelize.define('Notificacoes', {
     mensagem: {
-        type: dataTypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false
     },
     dataNot: {

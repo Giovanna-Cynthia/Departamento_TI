@@ -7,8 +7,6 @@ router.post('/', validateConta, contaController.create);
 
 router.put('/:id', validateConta, validateContaId, contaController.update); 
 
-router.put("/:id", validateConta, validateContaId, contaController.esqueciSenha);
-
 router.delete('/:id', validateContaId, contaController.delete ); 
 
 router.get('/:id', validateContaId, contaController.getOne); 
