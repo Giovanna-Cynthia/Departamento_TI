@@ -11,7 +11,7 @@ const Transacao = sequelize.define('Transacao', {
         allowNull: false,
     },
     valor: {
-        type:DataTypes.INTEGER,
+        type:DataTypes.STRING,
         allowNull: false
     },
     data: {

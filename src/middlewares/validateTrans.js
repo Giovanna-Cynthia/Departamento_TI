@@ -2,19 +2,15 @@ const validateTrans = (req, res, next) => {
     const { tipoConta, tipoTrans, valor, data } = req.body;
 
     if (!tipoConta || typeof tipoConta !== 'string') {
-        return res.status(400).json({ msg: 'Campos inválidos' });
+        return res.status(400).json({ msg: 'Campos inválidos conta' });
     }
 
     if (!tipoTrans || typeof tipoTrans !== 'string') {
-        return res.status(400).json({ msg: 'Campos inválidos' });
+        return res.status(400).json({ msg: 'Campos inválidos trans' });
     }
     
-    if (!valor || typeof valor !== 'integer') {
-        return res.status(400).json({ msg: 'Campos inválidos' });
-    }
-
-    if (!data || typeof data !== 'date') {
-        return res.status(400).json({ msg: 'Campos inválidos' })
+    if (!valor || typeof valor !== 'string') {
+        return res.status(400).json({ msg: 'Campos inválidos valor' });
     }
 
     next();

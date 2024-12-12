@@ -4,10 +4,6 @@ const validateNot = (req, res, next) => {
     if (!mensagem || typeof mensagem !== 'string') {
         return res.status(400).json({ msg: 'Campos inválidos' });
     }
-    
-    if (!dataNot || typeof dataNot !== 'date') {
-        return res.status(400).json({ msg: 'Campos inválidos' });
-    }
 
     next();
 }

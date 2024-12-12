@@ -12,7 +12,7 @@ const Admin = sequelize.define('Admin', {
         unique: true
     },
     idade: {
-        type:DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false
     },
     senha: {

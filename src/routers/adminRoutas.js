@@ -13,6 +13,6 @@ router.delete('/:id', validateAdminId, adminController.delete );
 
 router.get('/:id', validateAdminId, adminController.getOne); 
 
-router.get('/', adminController.getAll ); 
+router.get('/', adminController.getAll); 
 
 module.exports = router;

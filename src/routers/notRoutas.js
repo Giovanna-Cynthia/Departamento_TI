@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const notController = require("../controller/transController");
+const notController = require("../controller/notController");
 const { validateNot, validateNotId } = require("../middlewares/validateNot");
 const router = Router();
 

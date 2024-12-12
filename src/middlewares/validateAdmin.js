@@ -13,7 +13,7 @@ const validateAdmin = (req, res, next) => {
         return res.status(400).json({msg: 'Campo email inválido'})
     } 
     
-    if (!idade || typeof idade !== 'integer') {
+    if (!idade || typeof idade !== 'string') {
         return res.status(400).json({ msg: 'Campos inválidos' });
     }
 
